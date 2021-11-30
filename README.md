@@ -4,7 +4,7 @@ This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought
 
 ## Pre-Requisites
 
-You will need to have a CGB account that is funded.  You will fund the validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund the account.
+You will need to have a CGB account that is funded.  You will fund the validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund the account.  It can also be downloaded from this repo
 ```
 wget https://updates.althea.net/cgb-releases/gravity
 chmod +x gravity
