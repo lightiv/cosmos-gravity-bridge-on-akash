@@ -44,9 +44,7 @@ https://discord.gg/ZycVE6K23T
 
 https://goerli.etherscan.io/
 
-### Step 3:
-
-Edit your ```deploy.yml``` ```.env``` to add your new ETH address here:
+### Step 3: Edit your ```deploy.yml``` ```.env``` to add your new ETH address here:
 ```
 - EHEREUM_ADDRESS_FUNDED=
 ```
