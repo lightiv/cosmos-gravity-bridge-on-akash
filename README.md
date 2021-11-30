@@ -32,15 +32,15 @@ Save this Ethereum Key! Private Key: 0xf3081fe104b72b239xxxxxxxxxxxxxxxxxxxx365b
 ### Step 2: Send funds to your newly created ETH address
 To do this, use on of the methods below to get Geroli ETH.  I always start with the GOERLI FAUCET but many times I fine it not working.  If this happens you can join the Discord RocketPool and use their faucet channel.
 
-** Geroli Faucet **
+**Geroli Faucet:**
 
 https://goerli-faucet.slock.it/
 
-** RocketPool Discord **
+**RocketPool Discord:**
 
 https://discord.gg/ZycVE6K23T
 
-** Use the following Goeli ETH Explorer to verify receipt of funds before continuing **
+**Use the following Goeli ETH Explorer to verify receipt of funds before continuing:**
 
 https://goerli.etherscan.io/
 
