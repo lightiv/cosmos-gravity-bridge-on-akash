@@ -16,7 +16,13 @@ See Releases on the right side of the page.  You will also need to create an Aka
 akash tx cert create client --chain-id $AKASH_CHAIN_ID --keyring-backend $AKASH_KEYRING_BACKEND --from $AKASH_KEY_NAME --node $AKASH_NODE --fees 10000uakt
 ```
 
-You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund the account.  It can also be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
+The following command will be utilized to view your newly created addresses and mnemonics.
+```
+akash provider lease-logs --from $AKASH_KEY_NAME --dseq $AKASH_DSEQ --gseq $AKASH_GSEQ --oseq $AKASH_OSEQ --provider $AKASH_PROVIDER --node $AKASH_NODE > plogs
+```
+With the above command you it will create the file ```plogs``` which will conatain your new addresses and mnemonics.  Use ```nano``` or ```vi``` to view the file.
+
+You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund this account.  It can be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
 
 Let's get started.  The first thing we need to do is create and fund our ethereum address
 
