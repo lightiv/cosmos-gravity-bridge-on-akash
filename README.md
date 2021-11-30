@@ -4,15 +4,19 @@ This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought
 
 ## Pre-Requisites
 
-You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund the account.  It can also be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
-```
-wget https://updates.althea.net/cgb-releases/gravity
-chmod +x gravity
-sudo mv gravity /usr/bin/gravity
+You need a Linux node with the current Akash binary configured in your path. Which you can get here: 
 
-# Create a new key.  Copy the mnemonic and then send fund to this new address
-gravity keys add <KEY_NAME>
+https://github.com/ovrclk/akash
+
+See Releases on the right side of the page.  You will also need to create an Akash deployment certificate to be able to deploy to the Akash DeCloud.  Execute the following on your deployment node:
+
+**:warning: certificate needs to be created only once per account and can be used across all deployments.**
+
 ```
+akash tx cert create client --chain-id $AKASH_CHAIN_ID --keyring-backend $AKASH_KEYRING_BACKEND --from $AKASH_KEY_NAME --node $AKASH_NODE --fees 10000uakt
+```
+
+You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund the account.  It can also be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
 
 Let's get started.  The first thing we need to do is create and fund our ethereum address
 
