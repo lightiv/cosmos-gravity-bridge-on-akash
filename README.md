@@ -109,4 +109,59 @@ https://goerli.etherscan.io/
       - KEY_PASSWORD=
       - MINIMUM_GAS_PRICES=
 ```
- Edit the above variables as necessary
+Edit the above variables as necessary
+ 
+### Step 5: Deploy Cosmos Gravity Bridge
+ 
+#### Create a the deployment for Providers to bid on
+```
+akash tx deployment create ./deploy.yml --from $AKASH_KEY_NAME --node $AKASH_NODE --chain-id $AKASH_CHAIN_ID --fees 12000uakt -y
+```
+From the output fine the DSEQ number and add it to the following variable:
+```
+AKASH_DSEQ=<XXXXXX>
+```
+Verify the correct varibles:
+```
+echo $AKASH_DSEQ $AKASH_OSEQ $AKASH_GSEQ
+
+output:
+140324 1 1
+```
+#### View Bids:
+```
+akash query market bid list --owner $AKASH_ACCOUNT_ADDRESS --node $AKASH_NODE --dseq $AKASH_DSEQ -o text 
+```
+#### Select a provider from the listed BIDs
+From the prior command, select a provider and add their address to the following variable:
+```
+AKASH_PROVIDER=<PROVIDER_ADDRESS>
+```
+Verify Setting:
+```
+echo $AKASH_PROVIDER
+
+Output:
+<PROVIDER_ADDRESS>
+```
+#### Create Your Lease:
+```
+akash tx market lease create --from $AKASH_KEY_NAME --fees 10000uakt --gas auto  --owner $AKASH_ACCOUNT_ADDRESS --dseq $AKASH_DSEQ --gseq $AKASH_GSEQ --oseq $AKASH_OSEQ --provider $AKASH_PROVIDER --chain-id $AKASH_CHAIN_ID --node $AKASH_NODE 
+
+output:
+{"height":"565412","txhash":"01019A27B6CF1064XXXXXXXXXXXXXXXXXXXXCB78C07A79049F66E2AE8E336681","codespace":"","code":0,"data":"0A0XXXXXXXXXXXXXXXXXXXXC65617365","raw_log":"[{\"events\":[{\"type\":\"akash.v1\",\"attributes\":[{\"key\":\"module\",\"value\":\...
+```
+#### Upload Manifest:
+```
+akash provider send-manifest ./deploy.yml --node $AKASH_NODE --dseq $AKASH_DSEQ --provider $AKASH_PROVIDER --home ~/.akash --from $AKASH_KEY_NAME
+```
+there will be no output
+
+#### View Lease:
+```
+akash query market lease list --owner $AKASH_ACCOUNT_ADDRESS --node $AKASH_NODE --dseq $AKASH_DSEQ -o text
+```
+Retrieve the access details by running the below:
+```
+akash provider lease-status --node $AKASH_NODE --home ~/.akash --dseq $AKASH_DSEQ --from $AKASH_KEY_NAME --provider $AKASH_PROVIDER
+```
