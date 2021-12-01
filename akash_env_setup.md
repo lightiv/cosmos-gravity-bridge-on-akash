@@ -1,4 +1,8 @@
-See Releases on the right side of the page.  You will also need to create an Akash deployment certificate to be able to deploy to the Akash DeCloud.  Execute the following on your deployment node:
+Go here to get the akash binary: [Akash Binary Releases](https://github.com/ovrclk/akash)
+
+See Releases on the right side of the page.  
+
+You will also need to create an Akash deployment certificate to be able to deploy to the Akash DeCloud.  Execute the following on your deployment node:
 
 **:warning: certificate needs to be created only once per account and can be used across all deployments.**
 
