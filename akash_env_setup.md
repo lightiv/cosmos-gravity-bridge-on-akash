@@ -6,7 +6,7 @@ See Releases on the right side of the page.
 ```
 AKASH_NODE=http://135.181.60.250:26657
 AKASH_CHAIN_ID=akashnet-2
-AKASH_ACCOUNT_ADDRESS=akash14s4tlmlvy0vsps05csf8l80m7nqxmau38tehp9
+AKASH_ACCOUNT_ADDRESS=<FUNDED_AKASH_ADDRESS>
 AKASH_KEYRING_BACKEND=os
 AKASH_KEY_NAME=skynet-tehp9
 AKASH_OSEQ=1
@@ -33,7 +33,7 @@ export AKASH_ACCOUNT_ADDRESS="$(akash keys show $AKASH_KEY_NAME -a)"
 echo $AKASH_ACCOUNT_ADDRESS
 
 Output:
-akash1j8s87w3fctz7nlcqtkl5clnc805r240443eksx
+akash1j8s87w3fctzxxxxxxxxxxxxxxxxxxxx0443eksx
 ```
 
 ## Check your account has sufficient balance by running:
