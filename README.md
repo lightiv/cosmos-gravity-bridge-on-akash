@@ -57,7 +57,7 @@ wget https://updates.althea.net/cgb-releases/gen_eth_key && chmod +x gen_eth_key
 ```
 Run:
 ```
-gen_eth_key
+./gen_eth_key
 ```
 This will out put the following.  Save them!:
 ```
