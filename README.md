@@ -2,6 +2,8 @@
 
 This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought to you by _SkyNet | Validators_
 
+#### Credit:  This project is a derivative of [Akash Network Cosmos Omnibus](https://github.com/ovrclk/cosmos-omnibus) 
+
 ## Pre-Requisites
 
 You need a Linux node with the current Akash binary configured in your path. Which you can get here: 
