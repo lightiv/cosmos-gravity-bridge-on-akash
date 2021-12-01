@@ -8,21 +8,7 @@ This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought
 
 You need a Linux node with the current Akash binary configured in your path. Which you can get here: 
 
-https://github.com/ovrclk/akash
-
-See Releases on the right side of the page.  You will also need to create an Akash deployment certificate to be able to deploy to the Akash DeCloud.  Execute the following on your deployment node:
-
-**:warning: certificate needs to be created only once per account and can be used across all deployments.**
-
-```
-akash tx cert create client --chain-id $AKASH_CHAIN_ID --keyring-backend $AKASH_KEYRING_BACKEND --from $AKASH_KEY_NAME --node $AKASH_NODE --fees 10000uakt
-```
-
-The following command will be utilized to view your newly created addresses and mnemonics.
-```
-akash provider lease-logs --from $AKASH_KEY_NAME --dseq $AKASH_DSEQ --gseq $AKASH_GSEQ --oseq $AKASH_OSEQ --provider $AKASH_PROVIDER --node $AKASH_NODE > plogs
-```
-With the above command you it will create the file ```plogs``` which will conatain your new addresses and mnemonics.  Use ```nano``` or ```vi``` to view the file.
+[Akash Network Cosmos Omnibus](https://github.com/ovrclk/cosmos-omnibus)
 
 You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund this account.  It can be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
 
