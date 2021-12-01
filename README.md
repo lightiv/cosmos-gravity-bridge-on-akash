@@ -52,8 +52,8 @@ Let's get started.  The first thing we need to do is create and fund our ethereu
 
 ### Step 1: Download ETH Key Generator:
 ```
-mkdir ~/files && cd ~/files
-wget https://updates.althea.net/cgb-releases/gen_eth_key
+mkdir ~/cgb-files && cd ~/cgb-files
+wget https://updates.althea.net/cgb-releases/gen_eth_key && chmod +x gen_eth_key
 ```
 Run:
 ```
