@@ -8,7 +8,7 @@ This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought
 
 You need a Linux node with the current Akash binary configured in your path. Which you can get here: 
 
-[Akash Network Cosmos Omnibus](https://github.com/ovrclk/cosmos-omnibus)
+[Akash Network Environment Setup](https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/akash_env_setup.md)
 
 You will need to have a CGB account that is funded.  You will fund the new validator and Orchestrator accounts that you are deploying from this account.  You need to download the current binary and create and fund this account.  It can be downloaded from this repo: https://github.com/lightiv/cosmos-gravity-bridge-on-akash/blob/main/gen_eth_key?raw=true
 
