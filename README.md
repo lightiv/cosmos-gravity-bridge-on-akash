@@ -112,6 +112,8 @@ https://goerli.etherscan.io/
 Edit the above variables as necessary
  
 ### Step 5: Deploy Cosmos Gravity Bridge
+
+From this point forward please do not take too long to finish the steps.  If you take too long the bid will close and you will need to close the deployment and start over from this step.  The bid will close in 1 to 2 minutes after the next step.
  
 #### Create a the deployment for Providers to bid on
 ```
