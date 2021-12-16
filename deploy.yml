@@ -34,7 +34,7 @@ services:
       - VALIDATOR_WEBSIE=<VALIDATOR_WEBSITE>
       - VALIDATOR_IDENTITY=<KEYBASE_ID>
       - ORCHESTRATOR_FEES=1ufootoken
-      - REMOTE_RPC_NODE=http://202.61.205.130:26657
+      - REMOTE_RPC_NODE=http://0.0.0.0:26657
       - S3_KEY=
       - S3_SECRET=
       - S3_HOST=https://s3.filebase.com
