@@ -1,4 +1,6 @@
-# cosmos-gravity-bridge-on-akash
+# cosmos-gravity-bridge-on-akash 
+
+** **THIS IS THE FINAL TESTNET VERSION** **
 
 This repo is for deploying Cosmos Gravity Bridge (CGB) to Akash Network. Brought to you by _SkyNet | Validators_
 
